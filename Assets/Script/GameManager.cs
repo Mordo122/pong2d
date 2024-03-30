@@ -52,12 +52,12 @@ public class GameManager : MonoBehaviour
 
     public void ScoreCheck()
     {
-        if (PlayerScoreL == 20)
+        if (PlayerScoreL >= 20)
         {
             Debug.Log("playerL win");
             this.gameObject.SendMessage("ChangeScene","MainMenu");
         }
-        else if (PlayerScoreR == 20)
+        else if (PlayerScoreR >= 20)
         {
             Debug.Log("playerR win");
             this.gameObject.SendMessage("ChangeScene", "MainMenu");
