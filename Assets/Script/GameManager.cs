@@ -52,6 +52,8 @@ public class GameManager : MonoBehaviour
 
     public void ScoreCheck()
     {
+        //doesnt work idk why
+
         if (PlayerScoreL >= 20)
         {
             Debug.Log("playerL win");
