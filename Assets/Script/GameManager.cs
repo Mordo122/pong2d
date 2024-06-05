@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     }
 
 
+
+
     //Method penyeleksi untuk menambah score
     public void Score(string wallID)
     {
@@ -53,6 +55,7 @@ public class GameManager : MonoBehaviour
     public void ScoreCheck()
     {
         //doesnt work idk why
+        //I FOUND OUT WHYYY IT JUST NEEDS TO BE UPDATED
 
         if (PlayerScoreL >= 20)
         {
@@ -64,6 +67,13 @@ public class GameManager : MonoBehaviour
             Debug.Log("playerR win");
             this.gameObject.SendMessage("ChangeScene", "MainMenu");
         }
+    }
+
+        void Update()
+    {  
+        ScoreCheck();
+        Debug.Log("L:"+ PlayerScoreL);
+        Debug.Log("R:"+ PlayerScoreR);
     }
 
 }
