@@ -17,6 +17,13 @@ public class BotAI : MonoBehaviour
 
     void Update()
     {
+        StartCoroutine(AIDelay(2f)); 
+        MoveToBall();
+    }
+
+    private IEnumerator AIDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         MoveToBall();
     }
 }
