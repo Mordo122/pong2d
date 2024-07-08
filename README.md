@@ -1,4 +1,4 @@
-This is a pong game made for a college project @BINUS University.
+This is a pong game made using Unity for a college project @BINUS University.
 Modes include VS AI and VS Player.
 Controls:
 Red uses WASD, Blue uses Arrow Keys.
